@@ -1,0 +1,258 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom,#fff, rgb(237, 229, 219), #fff);
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #208cf9;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    transition: top 0.3s; /* Añadido para una transición suave al ocultar/mostrar */
+}
+
+nav.hidden {
+    top: -60px; /* Oculta el nav desplazándolo fuera de la pantalla */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Ajusta el peso de la fuente */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin-top: 60px; /* Ajusta el margen superior para evitar que el contenido se solape con el nav fijo */
+}
+
+footer {
+    background-color:  #208cf9;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 8px;
+}
+
+#hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#hero img:not(:first-child) {
+    opacity: 0;
+}
+
+#progress-bar {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: transparent; 
+    border: 2px solid #292929; 
+    border-radius: 50%;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.active-dot {
+    background-color: #ffffff;
+}
+
+nav {
+background-color: #208cf9;
+color: #fff;
+padding: 10px;
+text-align: center;
+border-radius:0 0  10px 10px ;
+}
+
+.nav-link {
+display: inline-block;
+padding: 8px 16px;
+margin: 0 10px;
+color: #fff;
+text-decoration: none;
+border: 2px solid #fff;
+border-radius: 20px;
+transition: background-color 0.3s, color 0.3s;
+font-weight: bold;
+
+}
+
+.nav-link:hover {
+background-color: #fff;
+color: #208cf9;
+text-decoration: none;
+
+}
+
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+   
+    padding: 20px;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+/* Estilos para cada producto */
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+.producto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.producto .contenido {
+    padding: 20px;
+}
+.producto h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.producto p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+.producto button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.producto button:hover {
+    background-color: #0056b3;
+}
+img {
+    border-radius: 8px;
+}
+
+#conocenos, #productos {
+    padding: 50px;
+    color: #333;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#conocenos, #productos {
+    background: linear-gradient(to bottom, #f8f9fa, #e9eef2);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#conocenos h1, #productos h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#conocenos p, #productos p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#productos {
+    padding: 50px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-producto {
+    flex: 1;
+}
+
+#productos h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#productos p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.imagen-producto {
+    flex-shrink: 0;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin-left: 30px;
+    position: relative;
+}
+
+
+.imagen-producto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
